@@ -1,0 +1,223 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5c5c5c;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px; 
+  }
+  
+  .auth-buttons button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Header */
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+/* Left Column - Reviews */
+.reviews {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.review-content {
+    flex: 3;
+}
+
+.review-actions {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Right Column - Sidebar */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.who-to-follow ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending li {
+    margin-bottom: 15px;
+}
+
+.writing-channel {
+    background-color: #eef;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+/* Style for navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the navbar is always on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the navbar */
+}
+
+/* Navbar container ensures the content is spaced and centered */
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center;
+    padding: 0 20px; /* Adjust this padding to add space from the page edges */
+    max-width: 1200px; /* You can limit the width or keep it fluid */
+    margin: 0 auto; /* Center the navbar container */
+}
+
+/* Navbar links styling */
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    text-decoration: underline; /* Optional hover effect */
+}
+
+/* Style for the auth buttons (Sign In / Sign Up) */
+.auth-buttons {
+    display: flex;
+    gap: 10px
+}
+
+.auth-buttons button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.auth-buttons button:hover {
+    background-color: #777; /* Hover effect */
+}
+
+/* Make sure content starts below the navbar */
+.content {
+    padding-top: 60px; /* Adjust this based on the height of your navbar */
+}
+
+/* Responsive design: make navbar items more compact on smaller screens */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+}
