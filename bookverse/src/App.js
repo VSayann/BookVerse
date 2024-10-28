@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+document.getElementById('signInBtn').addEventListener('click', function() {
+  alert('Sign In button clicked');
+  // Redirection ou ouverture d'un formulaire de connexion
+});
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+document.getElementById('signUpBtn').addEventListener('click', function() {
+  alert('Sign Up button clicked');
+  // Redirection ou ouverture d'un formulaire d'inscription
+});
