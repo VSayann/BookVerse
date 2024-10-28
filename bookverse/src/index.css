@@ -1,3 +1,83 @@
+/* Global settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  /* Add some margin to the top*/
+  margin-top: 30px;
+}
+
+nav {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Align items with space between */
+  align-items: center; /* Align items vertically */
+  padding: 10px 20px; /* Add some padding */
+  background-color: #5c5c5c;
+  color: white;
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points from the list */
+  display: flex; /* Align list items horizontally */
+  gap: 20px; /* Add space between the list items */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.auth-buttons {
+  display: flex; /* Align buttons horizontally */
+  gap: 10px; /* Add space between the buttons */
+}
+
+.auth-buttons button {
+  padding: 5px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.auth-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for sections and footer */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
