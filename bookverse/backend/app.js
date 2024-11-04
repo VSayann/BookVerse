@@ -8,12 +8,10 @@ dotenv.config();
 
 const app = express();
 
-// Middlewares
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
-// Routes
 app.use('/api/clubs', clubRoutes);
 
 module.exports = app;
