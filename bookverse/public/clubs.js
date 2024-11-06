@@ -1,4 +1,4 @@
-// "Join clubs" button
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const joinButtons = document.querySelectorAll('.join-btn');
