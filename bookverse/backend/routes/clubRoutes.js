@@ -6,4 +6,10 @@ router.get('/', clubController.getAllClubs);
 
 router.post('/', clubController.createClub);
 
+router.get('/', (req, res) => {
+  res.send('Liste des clubs');
+});
+
+module.exports = router;
+
 module.exports = router;
