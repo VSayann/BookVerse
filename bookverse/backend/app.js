@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 const clubRoutes = require('./routes/clubRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 dotenv.config();
 
@@ -14,12 +15,13 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
-
+app.use(express.static(path.join(__dirname, '..', 'src')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
-
 app.use('/api/clubs', clubRoutes);
+app.use('/api/auth', authRoutes);
+
 
 module.exports = app;
