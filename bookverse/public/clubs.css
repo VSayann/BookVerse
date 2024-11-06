@@ -95,7 +95,7 @@ h1 {
     text-align: center;
 }
 
-/* Most Liked Clubs & New Clubs Sections */
+
 .most-liked-clubs, .new-clubs {
     margin: 40px 0;
     padding: 20px;
@@ -109,7 +109,7 @@ h2 {
     color: #333;
 }
 
-/* Club List */
+
 .club-list {
     display: flex;
     flex-direction: column;
@@ -117,7 +117,7 @@ h2 {
     margin-top: 10px;
 }
 
-/* Individual Club */
+
 .club {
     display: flex;
     flex-direction: column;
