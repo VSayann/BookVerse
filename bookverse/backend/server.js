@@ -5,7 +5,6 @@ const PORT = process.env.PORT || 5001;
 sequelize.authenticate()
   .then(() => {
     console.log('MySQL connected...');
-
     sequelize.sync({ force: false })
       .then(() => {
         console.log('Database synchronized');
