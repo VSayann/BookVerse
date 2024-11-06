@@ -1,9 +1,9 @@
-// Toggle between review categories
+
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tabs a');
     const reviews = document.querySelectorAll('.review');
 
-    // Event listener for each tab
+
     tabs.forEach(tab => {
         tab.addEventListener('click', (event) => {
             event.preventDefault();
@@ -12,11 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             tab.classList.add('active');
 
-            // Filter reviews based on the clicked tab
             const category = tab.textContent.trim();
             reviews.forEach(review => {
                 if (category === 'Latest Reviews' || category === '+ New') {
-                    review.style.display = 'flex'; // Show all reviews for these categories
+                    review.style.display = 'flex';
                 } else {
                     const genre = review.querySelector('h3').textContent.trim();
                     if (genre === category) {
