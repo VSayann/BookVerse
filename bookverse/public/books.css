@@ -1,4 +1,4 @@
-/* Global styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -54,14 +54,15 @@ nav {
   }
   
 
-/* Header */
+
 header {
     background-color: #f0f0f0;
     padding: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 
-/* Main Content Layout */
+
 main {
     display: flex;
     max-width: 1200px;
@@ -74,7 +75,7 @@ main {
     width: 100%;
 }
 
-/* Left Column - Reviews */
+
 .reviews {
     flex: 2;
     background-color: white;
@@ -118,7 +119,7 @@ main {
     justify-content: space-evenly;
 }
 
-/* Right Column - Sidebar */
+
 .sidebar {
     flex: 1;
     display: flex;
@@ -142,7 +143,7 @@ main {
     text-align: center;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -150,31 +151,31 @@ footer {
     color: white;
     margin-top: 40px;
 }
-/* Style for navbar */
+
 .navbar {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333; /* Dark background */
+    background-color: #333; 
     color: white;
     padding: 10px 0;
-    z-index: 1000; /* Ensure the navbar is always on top */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the navbar */
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-/* Navbar container ensures the content is spaced and centered */
+
 .navbar-container {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Align items to the left and right */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 20px; /* Adjust this padding to add space from the page edges */
-    max-width: 1200px; /* You can limit the width or keep it fluid */
-    margin: 0 auto; /* Center the navbar container */
+    padding: 0 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
-/* Navbar links styling */
+
 .nav-item {
     color: white;
     text-decoration: none;
@@ -183,17 +184,17 @@ footer {
 }
 
 .nav-item:hover {
-    text-decoration: underline; /* Optional hover effect */
+    text-decoration: underline; 
 }
 
-/* Style for the auth buttons (Sign In / Sign Up) */
+
 .auth-buttons {
     display: flex;
     gap: 10px
 }
 
 .auth-buttons button {
-    background-color: #007bff; /* Button color */
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 5px 15px;
@@ -202,15 +203,14 @@ footer {
 }
 
 .auth-buttons button:hover {
-    background-color: #777; /* Hover effect */
+    background-color: #777; 
 }
 
-/* Make sure content starts below the navbar */
+
 .content {
-    padding-top: 60px; /* Adjust this based on the height of your navbar */
+    padding-top: 60px;
 }
 
-/* Responsive design: make navbar items more compact on smaller screens */
 @media (max-width: 768px) {
     .navbar-container {
         flex-direction: column;
