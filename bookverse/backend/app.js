@@ -22,6 +22,8 @@ app.get('/', (req, res) => {
 
 app.use('/api/clubs', clubRoutes);
 app.use('/api/auth', authRoutes);
-
-
+  app.use('/api/auth', (req, res, next) => {
+    console.log('authRoutes middleware called');
+    authRoutes(req, res, next);
+  });
 module.exports = app;
