@@ -7,85 +7,88 @@
     <title>BookVerse</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="books.html">Books</a></li>
-            <li><a href="clubs.html">Clubs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+    <header>
+        <h1>BookVerse</h1>
+        <nav class="navbar">
+            <div class="navbar-container">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="books.html">Books</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
             <div class="auth-buttons">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
+                <button onclick="window.location.href='/api/auth/signin.html'">Sign In</button>
+                <button onclick="window.location.href='/api/auth/signup.html'">Sign Up</button>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <h2>Books</h2>
+
+
+        <div class="tabs">
+            <a href="#">+ New</a>
+            <a href="#">Latest Reviews</a>
+            <a href="#">Following</a>
+            <a href="#">Recommended</a>
+            <a href="#">Watch List</a>
+            <a href="#">Trending</a>
+        </div>
+        <div class="section">
+            <h3>Thriller</h3>
+            <p>This is a sample review for a thrilling book...</p>
+            <div class="post-details">
+                <span>10 min read</span>
+                <span class="icon">❤️</span>
+                <span class="icon">📌</span>
             </div>
         </div>
-    </nav>
-<header>
-    <h1>Books</h1>
-</header>
 
-<main>
-    <section class="content">   
-        <div class="reviews">
-            <div class="tabs">
-                <a href="#">+ New</a>
-                <a href="#">Latest Reviews</a>
-                <a href="#">Following</a>
-                <a href="#">Recommended</a>
-                <a href="#">Watch List</a>
-                <a href="#">Trending</a>
-            </div>
-
-            <div class="review">
-                <div class="review-content">
-                    <h3>Thriller</h3>
-                    <p>This is a sample review for a thrilling book...</p>
-                    <p><small>10 min read</small></p>
-                </div>
-                <div class="review-actions">
-                    <button>❤️</button>
-                    <button>🔖</button>
-
-                </div>
-            </div>
-
+        <div class="section trending-list">
+            <h3>Trending</h3>
+            <ul>
+                <li>
+                    <strong>The Night Circus</strong>
+                    <br>By Shahriar Shahbazi
+                    <br><a href="#">Read more</a>
+                </li>
+            </ul>
         </div>
 
-        <div class="sidebar">
-            <div class="trending">
-                <h3>Trending</h3>
-                <ul>
-                    <li>
-                        <h4>The Night Circus</h4>
-                        <p>By Shahriar Shahbazi</p>
-                        <a href="#">Read more</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="writing-channel">
-                <h3>Writing on Channel</h3>
-                <p>New writer FAQ, expert writing advice</p>
-                <button>Start Writing</button>
-            </div>
-
-            <div class="who-to-follow">
-                <h3>Who to Follow</h3>
-                <ul>
-                    <li>
-                        <button>Follow</button>
-                    </li>
-                </ul>
-            </div>
+        <div class="section writing-section">
+            <h3>Writing on Channel</h3>
+            <p>New writer FAQ, expert writing advice</p>
+            <div class="start-writing">
+            <button>Start Writing Reviews</button> 
+            </div> 
         </div>
-    </section>
-</main>
 
-<footer>
-    <p><a href="index.html">Home | </a><a href="books.html">Books | </a><a href="clubs.html">Clubs | </a><a href="contact.html">Contact</a></p>
-</footer>
+        <div class="section follow-section">
+            <h3>Who to Follow</h3>
+            <ul>
+                <li>
+                    <strong>Shahriar Shahbazi</strong>
+                    <br>Followed by 1000 users
+                    <div class="follow-button">
+                    <br><button>Follow</button>
+                    </div>
+                </li>
+            </ul>   
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <br>
+            <a href="index.html">Home</a> | <a href="books.html">Books</a> | <a href="clubs.html">Clubs</a> | <a href="contact.html">Contact</a>
+        </p>
+    </footer>
 
 </body>
 </html>
