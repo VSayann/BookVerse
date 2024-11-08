@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="clubs.css">
+    <link rel="stylesheet" href="contact.css">
     <title>BookVerse</title>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
         <ul>
@@ -16,23 +15,28 @@
             <li><a href="clubs.html">Clubs</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-            <div class="auth-buttons">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
-            </div>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='/api/auth/signin.html'">Sign In</button>
+            <button onclick="window.location.href='/api/auth/signup.html'">Sign Up</button>
+        </div>
         </div>
     </nav>
     <header>
-        <h1>Contact</h1>
+        </div>
 </header>
+    <div class="form-container">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-<main>
-    <form class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
