@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5c5c5c;
+    color: white;
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    margin: 0;
+  }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+.auth-buttons button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.auth-buttons button:hover {
+    background-color: #777; 
+}
+
+.content {
+    padding-top: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    text-decoration: underline; 
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-top: 0;
+    color: #333333;
+}
+
+.section {
+    padding: 15px;
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h3 {
+    font-size: 24px;
+    color: #333333;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #808080;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
