@@ -4,51 +4,60 @@
     <script defer src="/js/auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="index.css">
     <title>BookVerse</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-        <ul>
-            <li><a href="index.html">Home</a></li> 
-            <li><a href="books.html">Books</a></li>
-            <li><a href="clubs.html">Clubs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-            <div class="auth-buttons">
-                <button class="sign-in">Sign In</button>
-                <button class="sign-up">Sign Up</button>
-            </div>
-        </div>
-    </nav>
+
     <header>
-        <h1>Bienvenue à BookVerse!</h1>
-        <p>Le site adapté aux passionnés de lecture. Créez vos propres clubs de lecture maintenant !</p>
+        <h1>BookVerse</h1>
+        <nav class="navbar">
+            <div class="navbar-container">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="books.html">Books</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button onclick="window.location.href='/api/auth/signin.html'">Sign In</button>
+                <button onclick="window.location.href='/api/auth/signup.html'">Sign Up</button>
+            </div>
+            </div>
+        </nav>
     </header>
 
-    <section class="clubs">
-        <h2>Best Clubs</h2>
-    </section>
+    <div class="container">
+        <h2>Bienvenue à BookVerse!</h2>
+        <p>Le site adapté aux passionnés de lecture. Créez vos propres clubs de lecture maintenant !</p>
 
-    <section class="posts">
-        <h2>Latest Posts</h2>
+        <div class="section">
+            <h3>Best Clubs</h3>
+            <p>Readers, you can join the best clubs on BookVerse!</p>
+        </div>
 
-    </section>
+        <div class="section">
+            <h3>Latest Posts</h3>
+            <p>Check out the latest posts from our clubs!</p>
+        </div>
 
-    <section class="top-users">
-        <h2>Top Users</h2>
-    </section>
+        <div class="section">
+            <h3>Top Users</h3>
+            <p>Check out the top users on BookVerse!</p>
+        </div>
 
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or suggestions? We'd love to hear from you! Reach out to us at <a href="mailto:contact@bookverse.com">contact@bookverse.com</a>.</p>
-    </section>
+        <div class="section">
+            <h3>Contact Us</h3>
+            <p>Have questions or suggestions? We'd love to hear from you! Reach out to us at <a href="mailto:contact@bookverse.com">contact@bookverse.com</a>.</p>
+        </div>
+    </div>
 
     <footer>
-        <p><a href="index.html">Home | </a><a href="books.html">Books | </a><a href="clubs.html">Clubs | </a><a href="contact.html">Contact</a></p>
+        <p>
+            <br>
+            <a href="index.html">Home</a> | <a href="books.html">Books</a> | <a href="clubs.html">Clubs</a> | <a href="contact.html">Contact</a>
+        </p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
