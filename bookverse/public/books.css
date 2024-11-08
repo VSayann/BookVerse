@@ -1,180 +1,123 @@
-
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.start-writing button {
+    display: flex;
+    border-radius: 8px;
+    padding: 5px 20px;
+    border: none;
+    background-color: #777;
+    color: black;
+    cursor: pointer;
+}
+.start-writing button:hover {
+    background-color: #333;
+    color: white;
+}  
+.follow-button button {
+    display: flex;
+    border-radius: 8px;
+    padding: 0px 20px;
+    border: none;
+    background-color: #777;
+    color: black;
+    cursor: pointer;
+}
+.follow-button button:hover {
+    background-color: #333;
+    color: white;
+}
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 nav {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #5c5c5c;
     color: white;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-  }
-  
-  nav ul li {
+}
+nav ul li {
     margin: 0;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-  }
-  
-  .auth-buttons {
+}
+
+.auth-buttons {
     display: flex;
-    gap: 10px; 
-  }
-  
-  .auth-buttons button {
+    gap: 10px;
+}
+
+.auth-buttons button {
     padding: 5px 15px;
     border: none;
     background-color: #007bff;
     color: white;
     cursor: pointer;
     border-radius: 4px;
-  }
-  
-  .auth-buttons button:hover {
-    background-color: #0056b3;
-  }
-  
-
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin-top: 50px;
-    text-align: center;
 }
-
-
-main {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    gap: 20px;
+.auth-buttons button:hover {
+    background-color: #777; 
 }
 
 .content {
-    display: flex;
-    width: 100%;
+    padding-top: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
-
-.reviews {
-    flex: 2;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.tabs {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.tabs a {
-    text-decoration: none;
-    color: #007bff;
-    padding: 5px 10px;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-}
-
-.review {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
-}
-
-.user-info {
-    flex: 1;
-}
-
-.review-content {
-    flex: 3;
-}
-
-.review-actions {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-.sidebar {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.who-to-follow ul {
-    list-style: none;
-    padding: 0;
-}
-
-.trending li {
-    margin-bottom: 15px;
-}
-
-.writing-channel {
-    background-color: #eef;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
-}
-
 .navbar {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333; 
+    background-color: #333;
     color: white;
     padding: 10px 0;
-    z-index: 1000; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 
 .navbar-container {
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px; 
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
 
 .nav-item {
     color: white;
@@ -187,37 +130,102 @@ footer {
     text-decoration: underline; 
 }
 
+/* Main content */
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
 
-.auth-buttons {
+.container h2 {
+    font-size: 32px;
+    margin-top: 150px;
+    color: #333;
+    text-align: center;
+}
+
+/* Tabs for navigation */
+.tabs {
     display: flex;
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
-.auth-buttons button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 15px;
-    cursor: pointer;
-    border-radius: 4px;
+.tabs a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.auth-buttons button:hover {
-    background-color: #777; 
+.tabs a:hover {
+    text-decoration: underline;
 }
 
-
-.content {
-    padding-top: 60px;
+/* Section styles */
+.section {
+    padding: 15px;
+    margin: 15px 0;
+    border-bottom: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
-    .navbar-container {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-
-    .auth-buttons {
-        margin-top: 10px;
-    }
+.section:last-child {
+    border-bottom: none;
 }
+
+/* Section titles */
+.section h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Post details */
+.post-details {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.post-details .icon {
+    font-size: 20px;
+    color: #333;
+    margin-right: 5px;
+}
+
+/* Trending, Writing, and Follow sections */
+.trending-list, .writing-section, .follow-section {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #808080;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
