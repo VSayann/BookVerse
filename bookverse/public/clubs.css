@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
 }
 
@@ -46,6 +46,9 @@ nav ul li a {
     color: white;
     cursor: pointer;
     border-radius: 4px;
+}
+.auth-buttons button:hover {
+    background-color: #777; 
 }
 
 .content {
@@ -138,7 +141,6 @@ h2 {
     color: #555;
 }
 
-/* Join Button */
 .join-btn {
     align-self: flex-start;
     padding: 8px 12px;
